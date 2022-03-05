@@ -2,19 +2,20 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Core.Entities;
 
-namespace Core.Entities
+namespace API.Dtos
 {
-    public class Product : BaseEntity
+    public class ProductToReturnDto
     {
-        //objektno relaciono mapiranje
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
         public string PictureUrl { get; set; }
-        public ProductType ProductType { get; set; }//foreign key
+        public string ProductType { get; set; }//foreign key
         public int ProductTypeId { get; set; }
-        public ProductBrand ProductBrand { get; set; }//foreign key
+        public string ProductBrand { get; set; }//foreign key
         public int ProductBrandId { get; set; }
 
     }
