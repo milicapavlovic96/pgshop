@@ -9,6 +9,7 @@ namespace Infrastructure.Identity
     {
         public static async Task SeedUsersAsync(UserManager<AppUser> userManager)
         {
+            
             if (!userManager.Users.Any())
             {
                 var user = new AppUser

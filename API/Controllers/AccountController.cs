@@ -28,7 +28,7 @@ namespace API.Controllers
             _userManager = userManager;
         }
 
-        /*[Authorize]
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<UserDto>> GetCurrentUser()
         {
@@ -70,7 +70,7 @@ namespace API.Controllers
             if (result.Succeeded) return Ok(_mapper.Map<AddressDto>(user.Address));
 
             return BadRequest("Problem updating the user");
-        }*/
+        }
 
 
         [HttpPost("login")]
