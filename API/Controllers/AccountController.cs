@@ -8,11 +8,13 @@ using AutoMapper;
 using Core.Entities.Identity;
 using Core.Interfaces;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
+    
     public class AccountController : BaseApiController
     {
         private readonly UserManager<AppUser> _userManager;
@@ -27,7 +29,7 @@ namespace API.Controllers
             _signInManager = signInManager;
             _userManager = userManager;
         }
-
+        [EnableCors("CorsPolicy")]
         [Authorize]
         [HttpGet]
         public async Task<ActionResult<UserDto>> GetCurrentUser()
@@ -41,13 +43,13 @@ namespace API.Controllers
                 DisplayName = user.DisplayName
             };
         }
-
+        [EnableCors("CorsPolicy")]
         [HttpGet("emailexists")]
         public async Task<ActionResult<bool>> CheckEmailExistsAsync([FromQuery] string email)
         {
             return await _userManager.FindByEmailAsync(email) != null;
         }
-
+        [EnableCors("CorsPolicy")]
         [Authorize]
         [HttpGet("address")]
         public async Task<ActionResult<AddressDto>> GetUserAddress()
@@ -56,7 +58,7 @@ namespace API.Controllers
 
             return _mapper.Map<AddressDto>(user.Address);
         }
-
+        [EnableCors("CorsPolicy")]
         [Authorize]
         [HttpPut("address")]
         public async Task<ActionResult<AddressDto>> UpdateUserAddress(AddressDto address)
@@ -72,7 +74,7 @@ namespace API.Controllers
             return BadRequest("Problem updating the user");
         }
 
-
+        [EnableCors("CorsPolicy")]
         [HttpPost("login")]
         public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
         {
@@ -93,7 +95,7 @@ namespace API.Controllers
                 DisplayName = user.DisplayName
             };
         }
-
+        [EnableCors("CorsPolicy")]
         [HttpPost("register")]
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
         {
