@@ -1,26 +1,26 @@
 [
   {
     "Id": 1,
-    "Name": "Angular"
+    "Name": "Voće"
   },
   {
     "Id": 2,
-    "Name": "NetCore"
+    "Name": "Povrće"
   },
   {
     "Id": 3,
-    "Name": "VS Code"
+    "Name": "Žitarice"
   },
   {
     "Id": 4,
-    "Name": "React"
+    "Name": "Meso i jaja"
   },
   {
     "Id": 5,
-    "Name": "Typescript"
+    "Name": "Mleko i mlečni proizvodi"
   },
   {
     "Id": 6,
-    "Name": "Redis"
+    "Name": "Riba"
   }
 ]

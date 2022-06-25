@@ -15,14 +15,13 @@ namespace API.Controllers
     public class PaymentsController : BaseApiController
     {
         private readonly IPaymentService _paymentService;
-        private readonly string _whSecret;
+        private const string _whSecret = "whsec_0ec14b0b49ff52d63a55dac37639d2d9cd89d033cef24d303de44b9e998b20f2";
         private readonly ILogger<PaymentsController> _logger;
         public PaymentsController(IPaymentService paymentService, ILogger<PaymentsController> logger, 
             IConfiguration config)
         {
             _logger = logger;
             _paymentService = paymentService;
-            _whSecret = config.GetSection("StripeSettings:WhSecret").Value;
         }
 
         [Authorize]

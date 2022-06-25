@@ -12,7 +12,7 @@ declare var Stripe;
 @Component({
   selector: 'app-checkout-payment',
   templateUrl: './checkout-payment.component.html',
-  styleUrls: ['./checkout-payment.component.scss']
+  styleUrls: ['./checkout-payment.component.css']
 })
 export class CheckoutPaymentComponent implements AfterViewInit, OnDestroy {
   @Input() checkoutForm: FormGroup;
@@ -34,7 +34,7 @@ export class CheckoutPaymentComponent implements AfterViewInit, OnDestroy {
     private toastr: ToastrService, private router: Router) { }
 
   ngAfterViewInit(): void {
-    this.stripe = Stripe('pk_test_2PZ84pFKu2MddUgGDG521v9m00SlLWySIR');
+    this.stripe = Stripe('pk_test_51KgarpDvcAqN4Qgsn11cwH73Trjw6Skr6XrTw3yczZ7f4j4VyW8KWZzRbFBbZMSd28q7Q9HjtLUPQymCDfD6DgRV00ksOx5kiw');
     const elements = this.stripe.elements();
 
     this.cardNumber = elements.create('cardNumber');
@@ -82,9 +82,9 @@ export class CheckoutPaymentComponent implements AfterViewInit, OnDestroy {
       const createdOrder = await this.createOrder(basket);
       const paymentResult = await this.confirmPaymentWithStripe(basket);
       if (paymentResult.paymentIntent) {
-        this.basketService.deleteLocalBasket(basket.id);
+        this.basketService.deleteBasket(basket);
         const navigationExtras: NavigationExtras = { state: createdOrder };
-        this.router.navigate(['checkout/success'], navigationExtras);
+        this.router.navigate(['checkout/Uspešna porudzbina'], navigationExtras);
       } else {
         this.toastr.error(paymentResult.error.message);
       }
