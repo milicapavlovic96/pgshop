@@ -7,3 +7,4 @@ namespace Core.Interfaces
         string CreateToken(AppUser user);
     }
 }
+

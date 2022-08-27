@@ -5,7 +5,8 @@
     "Price": 10,
     "PictureUrl": "images/products/1.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 4
+    "ProductBrandId": 4,
+	"Unit": "kom"
   },
   {
     "Name": "Trapist Sir",
@@ -13,7 +14,8 @@
     "Price": 999,
     "PictureUrl": "images/products/2.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 5
+    "ProductBrandId": 5,
+	"Unit": "kg"
   },
   {
     "Name": "Gauda",
@@ -21,7 +23,8 @@
     "Price": 1199,
     "PictureUrl": "images/products/3.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 5
+    "ProductBrandId": 5,
+	"Unit": "kg"
   },
   {
     "Name": "Luk",
@@ -29,7 +32,8 @@
     "Price": 150,
     "PictureUrl": "images/products/4.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 2
+    "ProductBrandId": 2,
+	"Unit": "kg"
   },
   {
     "Name": "Cvekla",
@@ -37,7 +41,8 @@
     "Price": 60,
     "PictureUrl": "images/products/5.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 2
+    "ProductBrandId": 2,
+	"Unit": "kg"
   },
   {
     "Name": "Kupus",
@@ -45,7 +50,8 @@
     "Price": 40,
     "PictureUrl": "images/products/6.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 2
+    "ProductBrandId": 2,
+	"Unit": "kg"
   },
   {
     "Name": "Žuta paprika",
@@ -53,7 +59,8 @@
     "Price": 80,
     "PictureUrl": "images/products/7.jpg",
     "ProductTypeId": 2,
-    "ProductBrandId": 2
+    "ProductBrandId": 2,
+	"Unit": "kg"
   },
   {
     "Name": "Paradajz",
@@ -61,7 +68,8 @@
     "Price": 250,
     "PictureUrl": "images/products/8.jpg",
     "ProductTypeId": 2,
-    "ProductBrandId": 2
+    "ProductBrandId": 2,
+	"Unit": "kg"
   },
   {
     "Name": "Belo grožđe",
@@ -69,7 +77,8 @@
     "Price": 150,
     "PictureUrl": "images/products/9.jpg",
     "ProductTypeId": 2,
-    "ProductBrandId": 1
+    "ProductBrandId": 1,
+	"Unit": "kg"
   },
   {
     "Name": "Ajdared jabuka",
@@ -77,7 +86,8 @@
     "Price": 60,
     "PictureUrl": "images/products/10.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 1
+    "ProductBrandId": 1,
+	"Unit": "kg"
   },
   {
     "Name": "Kruška",
@@ -85,21 +95,24 @@
     "Price": 120,
     "PictureUrl": "images/products/11.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 1
+    "ProductBrandId": 1,
+	"Unit": "kg"
   },
   {
     "Name": "Jagnjetina",
     "Description": "Domaće jagnjeće meso.",
     "Price": 2000,
-    "PictureUrl": "images/products/11.jpg",
+    "PictureUrl": "images/products/12.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 4
+    "ProductBrandId": 4,
+	"Unit": "kg"
   },{
     "Name": "Krastavac",
     "Description": "Domaći organski krastavac.",
     "Price": 100,
-    "PictureUrl": "images/products/11.jpg",
+    "PictureUrl": "images/products/13.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 2
+    "ProductBrandId": 2,
+	"Unit": "kg"
   }
 ]
