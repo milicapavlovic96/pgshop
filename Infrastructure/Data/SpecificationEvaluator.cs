@@ -30,5 +30,3 @@ namespace Infrastructure.Data
         }
     }
 }
-
-image.png
