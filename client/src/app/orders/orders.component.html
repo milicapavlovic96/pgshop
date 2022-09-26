@@ -4,7 +4,7 @@
             <table class="table table-hover" style="cursor: pointer;">
                 <thead class="thead-light">
                     <tr>
-                        <th>Porudzbina</th>
+                        <th>Porudžbina</th>
                         <th>Datum</th>
                         <th>Ukupno</th>
                         <th>Status</th>
@@ -12,7 +12,7 @@
                 </thead>
                 <tbody>
                     <tr *ngFor="let order of orders" routerLink="/orders/{{order.id}}">
-                        <th># {{order.id}}</th>
+                        <th># 1</th>
                         <td>{{order.orderDate | date: 'medium'}}</td>
                         <td>{{order.total + ".00 din"}}</td>
                         <td>{{order.status}}</td>
